@@ -2173,6 +2173,10 @@ msgstr "您的书架"
 msgid "About"
 msgstr "关于"
 
+#: cps/templates/stats.html:9
+msgid "Sponsor"
+msgstr "赞助"
+
 #: cps/templates/layout.html:159
 msgid "Previous"
 msgstr "上一个"

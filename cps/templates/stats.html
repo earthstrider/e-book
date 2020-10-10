@@ -1,9 +1,35 @@
 {% extends "layout.html" %}
 {% block body %}
-  <h3>{{_('About')}} {{instance}}</h3>
+
+
+    <h3>{{_('About')}} {{instance}}</h3>
 <p>{{instance}} powered by
 <a href="https://github.com/janeczku/calibre-web" title="Calibre-Web">Calibre-Web</a>.
 </p>
+
+
+    <h3>{{_('Sponsor')}}</h3>
+
+<div>
+    <div class="col-sm-3 col-lg-2 col-xs-6 " id="books_rand">
+      <div class="cover">
+          <div id="AliPay"><img width="150px" src="{{ url_for('static',filename='img/alipay.jpeg') }}" alt=""></div>
+          <div align="center">支付宝</div>
+      </div>
+    </div>
+
+    <div class="col-sm-3 col-lg-2 col-xs-6 " id="books_rand" >
+      <div class="cover">
+          <div id="WeChat"><img width="150px" src="{{ url_for('static',filename='img/wechat.jpeg') }}" alt=""></div>
+          <div align="center">微信</div>
+      </div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+
+
+
+
   <h3>{{_('Library Statistics')}}</h3>
 <table id="stats" class="table">
   <tbody>
